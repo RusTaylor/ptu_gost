@@ -1,0 +1,99 @@
+body {
+    background: url(/images/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* Фоновое изображение зафиксировано в окне просмотра, поэтому оно не смещается, когда высота контента больше высоты изображения */
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+}
+#gto {
+    width: 100%;
+}
+hr {
+border: none; /* Убираем границу */
+background-color: #151414; /* Цвет линии */
+color: #151414; /* Цвет линии для IE6-7 */
+height: 5px; /* Толщина линии */
+    width: 100%;
+}
+.none {
+ display: none;
+}
+#sendResult {
+    color: green;
+}
+
+#image {
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-size: 27px;
+    color: #151414;
+    text-align:  center;
+    margin: 63px;
+}
+h2 {
+    font-size: 27px;
+    color: #151414;
+    text-align:  center;
+    margin: 63px;
+}
+#colleges {
+    font-size: 30px;
+    color: black;
+}
+
+#form {
+    margin-left: 67px;
+}
+
+Form {
+    /*max-width: 400px;*/
+    width: 100%;
+}
+input {
+    box-sizing: border-box;
+    /*display: block;*/
+    border: none;
+    box-shadow: inset 0px 0px 4px 1px rgb(101, 122, 238);
+    padding: 20px 40px;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    outline: none;
+    text-align: center;
+    margin-right: 70px;
+}
+input {
+    background: rgba(158, 120, 229, 0.6);
+    border: none;
+    box-shadow: 0px 2px 0 1px #544aec;
+    border-radius: 40px;
+    color: white;
+    font-weight: 600;
+}
+input:hover {
+    background: #ace2f8;
+    box-shadow: 0px 2px 0 1px black;
+    border-radius: 2px;
+}
+
+@media (min-width: 1240px) {
+    #gto {
+        width: 40%;
+    }
+    input {
+        width: 20%;
+    }
+}
+@media (max-width:320px) {
+    #gto {
+   width: 100%;
+    }
+   input {
+       width: 100%;
+       margin: 67px;
+   }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ГТО</title>
+    <link rel="stylesheet" href="/css/mainpagecss.css">
+</head>
+<body>
+<hr>
+<p>
+<div id="image"><img src="/images/gto.png" id="gto"></p></div>
+<hr>
+<p>
+<h2>Уважаемые пользователи, на данной странице вам необходимо внести данные о ваших ФИО, дате рождения и УИН-коде.
+    Если у вас нет аккаунта ГТО, то перейдите по ссылке <a href="https://www.gto.ru/">https://www.gto.ru/</a>,
+    зарегистрируйтесь и введите данные на этой странице</h2>
+<hr>
+<h1>ГБПОУ КИГМ 23, ПОГОННЫЙ ПРОЕЗД, 5</h1>
+<div id="sendResult" class="none">
+    <p>Данные сохранены</p>
+</div>
+<div id="form">
+    <div id="contact_form">
+        <form class="form" action="/saveperson" method="post">
+            <input type="text" id="fio" name="name" placeholder="ФИО" required/>
+            <input type="text" id="birthday" name="data" placeholder="Дата рождения" required/>
+            <input type="text" id="code" name="yin" placeholder="УИН-код" required/>
+        </form>
+            <input type="submit" id="sendForm" value="Отправить" class="button">
+    </div>
+</div>
+{{if .IsLogin}}
+<a href="/download">Скачать</a>
+{{end}}
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/js/js.js"></script>
+</html>
