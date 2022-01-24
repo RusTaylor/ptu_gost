@@ -23,8 +23,11 @@
 <div id="form">
     <div id="contact_form">
         <form class="form" action="/saveperson" method="post">
+            <legend> Введите ваше ФИО. По образцу: Иванов Иван Иванович </legend>
             <input type="text" id="fio" name="name" placeholder="ФИО" required/>
-            <input type="text" id="birthday" name="data" placeholder="Дата рождения" required/>
+                    <legend> Введите вашу дату рождения </legend>
+            <input type="date" id="birthday" name="data" placeholder="Дата рождения" required/>
+                    <legend> Введите ваш УИН-код. По образцу: 12-34-5678910 (соблюдая тире)  </legend>
             <input type="text" id="code" name="yin" placeholder="УИН-код" required/>
         </form>
             <input type="submit" id="sendForm" value="Отправить" class="button">

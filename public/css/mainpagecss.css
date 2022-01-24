@@ -97,3 +97,13 @@ input:hover {
        margin: 67px;
    }
 }
+#fio {
+    font-size: 27px;
+    color: #151414;
+    text-align:  center;
+    margin: 63px;
+}
+#form {
+    margin-left: auto;
+    margin-right: auto
+}

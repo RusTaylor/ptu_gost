@@ -44,7 +44,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	err = tmpl.Execute(w, login)
 
 	if err != nil {
-		log.Println("Error template view")
+		log.Println(err)
 	}
 }
 
